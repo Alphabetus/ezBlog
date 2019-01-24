@@ -2,4 +2,4 @@
 Simple blogging system made on rails for practicing purposes.
 
 ## Live demo:
-(soon).
+https://ezblog-gomes.herokuapp.com/
