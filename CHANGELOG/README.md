@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.2] > Switch sqlite3 for postgreSQL
+
+- Patch `gemfile` to exclude sqlite from production state.
+
 ## [v0.1] > Initial commit
 
 - Add initial ruby tree.
