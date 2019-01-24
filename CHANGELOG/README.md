@@ -1,6 +1,7 @@
 # Changelog
 
 ## [v0.4] > Link post title to single post view
+### [v0.4.1] > Fix linking on post title
 
 ## [v0.3] > Organise posts chronologically
 
