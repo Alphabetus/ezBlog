@@ -1,5 +1,7 @@
 # Changelog
 
+## [v0.3] > Organise posts chronologically 
+
 ## [v0.2] > Switch sqlite3 for postgreSQL
 
 - Patch `gemfile` to exclude sqlite from production state.

@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = Post.all.order("created_at desc")
 
     # sanitise message
     @posts.each.with_index do |post, index|
