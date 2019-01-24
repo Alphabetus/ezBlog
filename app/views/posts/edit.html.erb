@@ -1,0 +1,31 @@
+<!-- section wrapper -->
+<div id="section_wrapper_editpost" class="px-0 mx-0">
+  <!-- title -->
+  <div class="row header">
+    <div class="col-6">
+      <h1>::posts/edit>_</h1>
+    </div>
+
+    <div class="col-6 text-right">
+      <span id="live_clock"></span>
+    </div>
+  </div>
+  <!-- /title -->
+
+  <!-- form -->
+  <div class="row form_wrapper">
+    <div class="col-12">
+      <%= render 'form', post: @post %>
+    </div>
+  </div>
+  <!-- /form -->
+
+  <div class="actions row">
+
+    <div class="col-12 text-center mt-5">
+      <%= link_to 'Show Post', @post, class: "btn btn-outline-primary w-10" %>
+    </div>
+
+  </div>
+</div>
+<!-- /section wrapper -->

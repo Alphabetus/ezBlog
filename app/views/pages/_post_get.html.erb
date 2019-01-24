@@ -1,0 +1,38 @@
+<% @posts.each do |post| %>
+  <div class="col-12 border rounded bg-light shadow-sm mb-2 post_wrapper">
+
+    <!-- post header -->
+    <div class="row border-bottom">
+
+      <!-- title -->
+      <div class="col-12 post_head">
+        <%= post.title %>
+      </div>
+      <!-- meta -->
+      <div class="col-12 post_meta">
+        <%= post.updated_at %>
+      </div>
+
+    </div>
+    <!-- /post header -->
+
+    <!-- post body -->
+    <div class="row">
+
+      <!-- message -->
+      <div class="col-12 post_content text-justify border-bottom">
+        <%= post.message %>
+      </div>
+      <!-- /message -->
+
+      <!-- read more -->
+      <div class="col-12 post_action text-right py-2">
+        <%= link_to "read all", post, class: "btn btn-outline-secondary btn-sm", :"data-turbolinks" => false %>
+      </div>
+      <!-- /read more -->
+
+    </div>
+    <!-- /post body -->
+
+  </div>
+<% end %>

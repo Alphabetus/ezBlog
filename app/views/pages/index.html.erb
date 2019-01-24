@@ -1,0 +1,45 @@
+<!-- section wrapper -->
+<div id="section_wrapper_index" class="px-0 mx-0">
+
+  <!-- title -->
+  <div class="row header">
+    <div class="col-6">
+      <h1>::posts>_</h1>
+    </div>
+
+    <div class="col-6 text-right">
+      <span id="live_clock"></span>
+    </div>
+  </div>
+  <!-- /title -->
+
+  <!-- content >> grid x 2 -->
+  <div class="row post_content">
+
+    <!-- left grid -->
+    <div class="col-12 col-md-8 m-0 px-0 px-md-3">
+      <div class="row wrapper_post">
+        <%= render("post_get") %>
+      </div>
+    </div>
+    <!-- /left grid -->
+
+    <!-- right grid -->
+    <div class="d-none d-md-block col-md-4">
+      <div class="row wrapper_sidebar">
+        <div class="col-12 border rounded bg-light shadow-sm text-justify">
+          This is the sidebar.<br>
+          Useful but unnecessary information will be displayed here.<br>
+          Tags and user count, latest posts, etc.<br>
+          <br>
+          Only visible above MD.
+        </div>
+      </div>
+    </div>
+    <!-- /right grid -->
+
+  </div>
+  <!-- /content -->
+
+</div>
+<!-- /end of section wrapper -->

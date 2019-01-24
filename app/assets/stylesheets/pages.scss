@@ -1,0 +1,121 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+
+// index area css isolation
+#section_wrapper_index{
+  min-height: 200vh;
+  // row fix
+  .row {margin: 0;}
+  // content padding
+  .post_content{
+    padding-top: 6vh;
+  }
+
+  // post handler
+  .post_wrapper{
+    padding: 0;
+    // post_head & meta padding
+    .post_head, .post_meta{
+      padding: 0 0.3em 0 0.3em;
+    }
+    // title handler
+    .post_head{
+      padding-left: 2%;
+      padding-right: 2%;
+      font-size: 1.4em;
+      font-weight: 400;
+    }
+    // meta handler
+    .post_meta{
+      padding-left: 2%;
+      padding-right: 2%;
+      font-size: 0.6em;
+      font-style: italic;
+    }
+    // post message handler
+    .post_content{
+      padding-top: 2%;
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-bottom: 2vh;
+    }
+  }
+}
+
+
+// newpost area css isolation
+#section_wrapper_newpost{
+  min-height: 100vh;
+  // row fix
+  .row{margin: 0;}
+  // form wrapper
+  .form_wrapper{
+    padding-top: 6vh;
+  }
+}
+
+// editpost area css isolation
+#section_wrapper_editpost{
+  min-height: 100vh;
+  // row fix
+  .row{margin: 0;}
+  // form wrapper
+  .form_wrapper{
+    padding-top: 6vh;
+  }
+}
+
+// post area css isolation
+#section_wrapper_post{
+  min-height: 100vh;
+  .row{margin: 0;}
+  // post wrapper
+  .post_wrapper{
+    padding-top: 10vh;
+  }
+
+  // post meta handler
+  .post_meta{
+    font-size: 0.7em;
+    font-style: italic;
+  }
+  // paragraph text handler
+  p{
+    padding-top: 2vh;
+    font-size: 1em;
+  }
+}
+
+// GENERAL HEADER HANDLER
+.header{
+  position: fixed;
+  top: 6vh;
+  left: 0;
+  right: 0;
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  background-color: $color-dark-2;
+  box-shadow: $boxShadow-down-01;
+  z-index: 50;
+  // title semantic
+  h1{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: var(--light);
+  }
+  // span for clock
+  span{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-40%);
+    font-size: 1em;
+    color: var(--light);
+  }
+}
