@@ -1,6 +1,8 @@
 # Changelog
 
-## [v0.3] > Organise posts chronologically 
+## [v0.4] > Link post title to single post view
+
+## [v0.3] > Organise posts chronologically
 
 ## [v0.2] > Switch sqlite3 for postgreSQL
 

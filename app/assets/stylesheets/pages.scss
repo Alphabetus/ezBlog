@@ -26,6 +26,15 @@
       padding-right: 2%;
       font-size: 1.4em;
       font-weight: 400;
+      // link handling
+      a{
+        color: var(--dark);
+      }
+      a:hover{
+        color: $color-dark-2;
+        background-color: transparent;
+        text-decoration: none;
+      }
     }
     // meta handler
     .post_meta{
