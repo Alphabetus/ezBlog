@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.5] > Truncate with helper & partial rename
+
+- Rename post partial to use `Posts` controller.
+- Truncate text directly on view using `truncate()` helper.
+- Patch `pages_controller` to remove redundant string format.
+
 ## [v0.4] > Link post title to single post view
 
 ### [v0.4.2] > Fix linking on post title II

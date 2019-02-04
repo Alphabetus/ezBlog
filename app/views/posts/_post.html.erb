@@ -1,4 +1,3 @@
-<% @posts.each do |post| %>
   <div class="col-12 border rounded bg-light shadow-sm mb-2 post_wrapper">
 
     <!-- post header -->
@@ -21,13 +20,13 @@
 
       <!-- message -->
       <div class="col-12 post_content text-justify border-bottom">
-        <%= post.message %>
+        <%= truncate(post.message, length: 400, separator: " ", omission:" ...") %>
       </div>
       <!-- /message -->
 
       <!-- read more -->
       <div class="col-12 post_action text-right py-2">
-        <%= link_to "read all", post, class: "btn btn-outline-secondary btn-sm", :"data-turbolinks" => false %>
+        <%= link_to "read all", post, class: "btn btn-outline-secondary btn-sm float-right", :"data-turbolinks" => false %>
       </div>
       <!-- /read more -->
 
@@ -35,4 +34,3 @@
     <!-- /post body -->
 
   </div>
-<% end %>
